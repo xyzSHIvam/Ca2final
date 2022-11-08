@@ -41,13 +41,15 @@ body{
     text-align:center;
     color:#fff;
 }
+
 .navbar{
+    
     padding:0 0 5rem;
     
 }
 
 .navbar-brand h1{
-
+     
     font-size:4rem;
     font-weight:400;
      
@@ -64,6 +66,7 @@ body{
     border-radius: 20%;
 
 }
+
 .nav-link:hover{
     background-color:#0a4946;
     border-radius: 20%;
@@ -156,7 +159,7 @@ font-weight:bolder;
     width:100%;
     height:100px;
     background:linear-gradient(to top,transparent,#1c0522);
-    top:1000px;
+    top:100%;
 }
 @media (max-width:393px){
     #quiz p::after{
@@ -166,7 +169,7 @@ font-weight:bolder;
         width:100%;
         height:100px;
         background:linear-gradient(to top,transparent,#1c0522);
-        top:750px;
+        top:100%;
     }
 }
 
@@ -342,12 +345,12 @@ font-weight:bolder;
 }
 @media (max-width:393px){
     .quiz_box{
-        width:50%;
+        width:60%;
         height: 30vh;
         margin: auto;
         background-color: rgb(199, 194, 194);
         position:absolute;
-        left:30%;
+        left: 20%;
         bottom:50%;  
         top:40%; 
         padding: 3% 0% 7%;
@@ -392,10 +395,41 @@ font-weight:bolder;
 .real label{
     font-size: 2rem;
 }
+@media (max-width:375px) 
+{
+    .real h2{
+        font-size: 1.2rem;
+    }
+    .real h3{
+        font-size:0.3rem ;
+        font-weight:bolder ;
+    }
+    .real label{
+        font-size: 0.3rem;
+    }
+}
 .row{
     background-color:rgb(200, 177, 177);
     margin: 2%;
     padding:0% 6% 0%;
+}
+@media (max-width:343px){
+    .row{
+        width:30vw;
+        height:3vh;
+        background-color:rgb(200, 177, 177);
+        margin: 2%;
+        padding:0% 1% 0%;
+    } 
+    .btn{
+        display: block;
+        position:relative;
+        left: 5%;
+        top:1.6vw;
+    }
+    .btn:hover{
+        background-color: #2E0249;
+    }
 }
 .row:hover{
     transform:scale(1.1);
